@@ -1,3 +1,4 @@
+import { useState } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
@@ -7,6 +8,7 @@ import Skills from "./components/skills/Skills";
 import SocialMedia from "./components/socialMedias/SocialMedia";
 
 function App() {
+  const [todos, setTodos] = useState([]);
   return (
     <>
       <NavBar />
@@ -16,6 +18,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+
     </>
   );
 }
